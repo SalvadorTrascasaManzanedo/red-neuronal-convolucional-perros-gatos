@@ -1,7 +1,7 @@
 # Clasificación de perros y gatos con una RNN tipo VGG16
 
 ## Descripción del proyecto
-Este proyecto desarrolla un modelo de clasificación binaria de imágenes mediante una red neuronal convolucional inspirada en la arquitectura VGG16. El objetivo es distinguir entre imágenes de perros y gatos a partir del conjunto de datos Dogs vs Cats.
+Este proyecto desarrolla un modelo de clasificación binaria de imágenes mediante una red neuronal convolucional inspirada en la arquitectura VGG16. El objetivo es distinguir entre la clase perro y gato.
 
 El trabajo incluye el diseño de la arquitectura, el entrenamiento del modelo piloto, el análisis del rendimiento, la evaluación del sobreajuste, la visualización de resultados y la generación de predicciones sobre nuevos casos.
 
@@ -10,10 +10,24 @@ Red Connvolucional (RNN) compacta, reducida la dimensionalidad a la mitad de la 
 ![Diagrama de la red](plot/VGG16-like.png)
 
 ## Base de datos:
-Se utilizó el conjunto de datos Dogs vs Cats de Kaggle.
+Se utilizó el conjunto de datos Dogs vs Cats de Kaggle con 25000 imágenes etiquetadas (1250 por clase). Link:
+https://www.kaggle.com/c/dogs-vs-cats/data 
 
-La base de datos no se incluye en este repositorio debido a las limitaciones de tamaño de GitHub. Para reproducir el proyecto, es necesario descargar el dataset original y organizarlo con la estructura esperada por el código.
+Para reproducir el proyecto, es necesario descargar el dataset original y se aconseja organizarlo siguiendo la siguiente estructura y proporción:
+
+```text
+data/
+├── train (80%)/
+│   ├── dogs(40%)/
+│   └── cats(40%)/
+├── validation(10%)/
+│   ├── dogs(5%)/
+│   └── cats(5%)/
+└── test(10%)/
+```
+Importante: siempre revisar la literatura para la organización de tamaño y proporción muestral, estudios de potencia, etc.
 
 ## Rendimiento y Overfiting:
-Evolución de la precisión y la pérdida durante las épocas, sobreajuste en la época 8.
+Evolución de la precisión y la pérdida durante las épocas evidencia un sobreajuste en la época 8 (Significancia estadistica con prueba de diferencia de medias entre el accuracy del entrenamiento y de la validación).
 ![Diagrama de la red](plot/Overfitting_CNN.png)
+
