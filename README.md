@@ -6,11 +6,11 @@ Este proyecto desarrolla un modelo de clasificación binaria de imágenes median
 El trabajo incluye el diseño de la arquitectura, el entrenamiento del modelo piloto, el análisis del rendimiento, la evaluación del sobreajuste, la visualización de resultados y la generación de predicciones sobre nuevos casos.
 
 ## Arquitectura:
-Red Connvolucional (RNN) compacta, reducida la dimensionalidad a la mitad de la VGG16 original.
+Red Connvolucional (RNN) compacta, reducida la dimensionalidad a la mitad de la VGG16 original. Con normalizacion por lotes en cada capa detras de la primera convolucional.
 ![Diagrama de la red](plot/VGG16-like.png)
 
 ## Base de datos:
-Se utilizó el conjunto de datos Dogs vs Cats de Kaggle con 25000 imágenes etiquetadas (1250 por clase). Link:
+Se utilizó el conjunto de datos Dogs vs Cats de Kaggle con 25000 imágenes etiquetadas (12500 por clase). Link:
 https://www.kaggle.com/c/dogs-vs-cats/data 
 
 Para reproducir el proyecto, es necesario descargar el dataset original y se aconseja organizarlo siguiendo la siguiente estructura y proporción:
