@@ -33,7 +33,7 @@ Evolución de la precisión y la pérdida durante las épocas evidencia un sobre
 
 ## Matriz de confusión.
 El modelo clasificó correctamente 1139 gatos y 1133 perros, con 128 errores totales sobre 2400 imágenes de prueba.
-## Matriz de confusión
+
 
 |               | Predicción: gato | Predicción: perro |
 |---------------|------------------:|------------------:|
