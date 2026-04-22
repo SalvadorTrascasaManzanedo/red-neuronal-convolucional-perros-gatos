@@ -28,10 +28,10 @@ data/
 Importante: siempre revisar la literatura para la organización de tamaño y proporción muestral, estudios de potencia, etc.
 
 ## Rendimiento y Overfiting:
-Evolución de la precisión y la pérdida durante las épocas evidencia un sobreajuste en la época 8 (Significancia estadistica con prueba de diferencia de medias entre el accuracy del entrenamiento y de la validación).
+La evolución de la precisión y la pérdida durante las épocas evidencia un sobreajuste en la época 8 (Significancia estadistica con prueba de diferencia de medias entre el accuracy del entrenamiento y de la validación).
 ![Diagrama de la red](plot/Overfitting_CNN.png)
 
-## Prediccuones y Matriz de confusión.
+## Predicciones y Matriz de confusión.
 El modelo clasificó correctamente 1139 gatos y 1133 perros, con 128 errores totales sobre 2400 imágenes de prueba.
 
 
